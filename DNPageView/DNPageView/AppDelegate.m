@@ -38,7 +38,7 @@
     NSString *currentVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     NSString *historyVersion =[NSFileManager getAppSettingsForObjectWithKey:@"VersionStr"];
     if (historyVersion == nil || [historyVersion compare:currentVersion options:NSNumericSearch] == NSOrderedAscending) {
-        [DNPageView sharePageView].isPageControl = NO;
+//        [DNPageView sharePageView].isPageControl = NO;
         [[DNPageView sharePageView] initPageViewToView:self.window dismiss:^{
             NSLog(@"记住了 我已经看过你了");
             [NSFileManager setAppSettingsForObject:currentVersion forKey:@"VersionStr"];
