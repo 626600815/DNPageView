@@ -13,6 +13,9 @@
     
 在AppDelegate中添加引导页代码
 
+修改一下DNPageView.m中的imageNameArr数组中的图片名字然后就可以调用下面的代码
+
+
      [[DNPageView sharePageView] initPageViewToView:self.window dismiss:^{
             //引导页看完了要执行的操作（通常是记录key值保证下次启动不在加载引导页）
       }];
