@@ -23,5 +23,9 @@
 引导页默认是添加了UIPageControl小圆点的，如果你的引导页图片上有小圆点的话可以把类中的小圆点隐藏，还是一句话哦
 
     [DNPageView sharePageView].isPageControl = NO;
+    
+按照封装类中图片命名格式添加图片,设置引导页的个数,设置的个数不要超过你所拥有的图片数量
+
+    [DNPageView sharePageView].pageNum = 2;
 
 就这些东西了，是不是很简单呢，好了就这些了，具体代码看看demo就可以了
