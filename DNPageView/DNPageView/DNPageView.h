@@ -14,7 +14,7 @@ typedef void(^DNPageDismiss)(void);
 
 + (DNPageView *)sharePageView;
 
-@property (nonatomic, assign) NSInteger pageNum; //设置引导图个数(设置个数之前一定要看好到底有没有这么多图片)
+@property (nonatomic, assign) NSInteger pageNum; //设置引导图个数,如果不设置默认不显示引导页(设置个数之前一定要看好到底有没有这么多图片)
 @property (nonatomic, assign) BOOL isPageControl;//是否要pageControl 默认YES
 
 /**

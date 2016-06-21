@@ -46,11 +46,10 @@
     self.backgroundColor = [UIColor whiteColor];
     [view addSubview:self];
     
-   
-    
     [self createScrollView];
     [self createPageControl];
     
+    //当没有设置引导页数量的时候直接进入主界面
     if (!self.pageNum) {
         [self doneBtnClick];
     }
